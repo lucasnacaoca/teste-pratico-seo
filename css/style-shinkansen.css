@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: #eeeeee !important;
+}
+
+header{
+    background: #0080fd;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+nav{
+    max-width: 1333px;
+    margin: 0 auto;
+}
+
+.navbar .navbar-brand >span img{
+    height: 80px;
+}
+
+nav.nav-color{
+    padding: 20px 50px;
+    background:#0080fd;
+    border: none;
+}
+
+.navbar .nav>li>a{
+    color: white !important;
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: .2s;
+}
+
+.navbar .nav>li>a:hover{
+    background: rgba(0, 0, 0, 0.192);
+}
+
+.navbar-toggler-icon, .navbar-toggler{
+    background-color: #eeeeee !important;
+}
+
+/* Main */
+
+.container-titulo{
+    height: 640px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-weight: 900;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+}
+
+.background{
+    background-image: url(../img/shinkansen-station.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 1333px){
+    .container-titulo{
+        height: 360px;
+    }
+}
+
+@media (max-width: 650px){
+    .titulo{
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 420px){
+    .titulo{
+        font-size: 2em;
+    }
+}
+
+.pontos-positivos{
+    max-width: 1333px;
+    margin: 0 auto;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1333px;
+    margin: 100px auto;
+
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #cccccc;
+    padding: 20px;
+}
+
+.artigos{
+    width: 646px;
+}
+
+.artigos h2{
+    font-size: 2.4em;
+    margin-bottom: 15px;
+}
+
+.artigos h3{
+    font-size: 1.6em;
+    margin-top: 30px;
+}
+
+.artigos p{
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.imagem-artigos{
+    width: 646px;
+}
+
+.imagem-artigos img{
+    width: 100%;
+}
+
+@media (max-width: 1183px){
+    .conteudo{
+        flex-direction: column;
+        margin: 100px 50px;
+        padding: 40px;
+    }
+
+    .artigos{
+        width: auto;
+    }
+
+    .imagem-artigos{
+        max-width: 450px;
+        width: auto;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 530px){
+    .conteudo{
+        margin: 100px 10px;
+    }
+
+
+}
+
+#footer{
+    background: #0080fd;
+}
+
+footer{
+    text-align: center;
+    height: 45px;
+    margin: 0 auto;
+    color: white;
+}
